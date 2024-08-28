@@ -11,6 +11,7 @@ export default {
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'oswald': ['Oswald'],
       'body': ['"Open Sans"'],
+      'teko' :['Teko']
     },
     extend: {},
   },

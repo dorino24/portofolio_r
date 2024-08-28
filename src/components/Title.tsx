@@ -30,7 +30,7 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
           <a href="https://github.com/dorino24" target="_blank">
             <img
               src={githubIcon}
-              className="mx-1 hover:w-10"
+              className="mx-1 transation ease-in-out hover:scale-125 "
               alt="github"
               width={36}
             />
@@ -38,7 +38,7 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
           <a href="https://linkedin.com/in/ridho-priambodo/" target="_blank">
             <img
               src={linkedinIcon}
-              className="mx-1 hover:w-10"
+              className="mx-1 transation ease-in-out hover:scale-125"
               alt="linkedin"
               width={36}
             />
@@ -46,7 +46,7 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
           <a href="mailto:ridhopriambodo558@gmail.com">
             <img
               src={emailIcon}
-              className="mx-1 hover:w-10"
+              className="mx-1 transation ease-in-out hover:scale-125"
               alt="email"
               width={36}
             />
