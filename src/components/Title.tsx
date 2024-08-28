@@ -1,4 +1,8 @@
 import { useEffect } from "react";
+import linkedinIcon from '../assets/mdi_linkedin.png';
+import githubIcon from '../assets/mdi_github.png';
+import emailIcon from '../assets/email.png';
+import me from '../assets/me.png';
 
 interface TitleProps {
   onTitleHeightChange: (height: number,tipe:string) => void;
@@ -25,7 +29,7 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
         <div className="flex mt-3">
           <a href="https://github.com/dorino24" target="_blank">
             <img
-              src="src\assets\mdi_github.png"
+              src={githubIcon}
               className="mx-1 hover:w-10"
               alt="github"
               width={36}
@@ -33,7 +37,7 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
           </a>
           <a href="https://linkedin.com/in/ridho-priambodo/" target="_blank">
             <img
-              src="src\assets\mdi_linkedin.png"
+              src={linkedinIcon}
               className="mx-1 hover:w-10"
               alt="linkedin"
               width={36}
@@ -41,7 +45,7 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
           </a>
           <a href="mailto:ridhopriambodo558@gmail.com">
             <img
-              src="src\assets\email.png"
+              src={emailIcon}
               className="mx-1 hover:w-10"
               alt="email"
               width={36}
@@ -50,7 +54,7 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
         </div>
       </div>
 
-      <img src="src\assets\me.png" alt="" width={300} />
+      <img src={me} alt="" width={300} />
     </div>
   );
 }
