@@ -23,7 +23,7 @@ export default function Contact({ onTitleHeightChange }: TitleProps) {
         className="flex justify-center flex-col text-center my-20"
       >
         <h1 className="text-5xl font-bold">Contact</h1>
-        <div className="grid grid-cols-9 my-10  text-neutral-400 text-lg">
+        <div className="grid grid-cols-9 my-10  text-neutral-400 text-md sm:text-lg mx-14 sm:mx-0">
           <div className="text-end mx-2 col-span-4">Email</div>
           <div className="text-center ">|</div>
           <div className="text-start mx-2 col-span-4 hover:text-white">

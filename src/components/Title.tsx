@@ -17,16 +17,16 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
   }, [onTitleHeightChange]);
 
   return (
-    <div id="title" className="flex flex-row justify-between my-36">
-      <div className="flex flex-col text-5xl font-medium justify-center me-32">
+    <div id="title" className="flex flex-col-reverse sm:flex-row justify-between my-28 sm:my-36 items-center text-center sm:items-start sm:text-start">
+      <div className="flex flex-col text-5xl font-medium justify-center xl:me-32 md:me-12 pt-20  sm:pt-0">
         <h1>Ridho</h1>
-        <h1 className="my-3">Full Stack Developer</h1>
-        <hr style={{ width: 200 + "px", color: "white" }} className="my-3" />
-        <p className="text-sm text-neutral-400 my-3">
+        <h1 className="my-3 sm:text-5xl text-4xl">Full Stack Developer</h1>
+        <hr style={{ width: 200 + "px", color: "white" }} className="my-3 mx-auto sm:mx-0" />
+        <p className="text-sm text-neutral-400 my-3 sm:mx-0 mx-14">
           I develop end-to-end web applications, manage both frontend and
           backend systems, and ensure seamless integration between technologies.
         </p>
-        <div className="flex mt-3">
+        <div className="flex mt-3 justify-center sm:justify-normal">
           <a href="https://github.com/dorino24" target="_blank">
             <img
               src={githubIcon}
@@ -54,7 +54,7 @@ export default function Title({ onTitleHeightChange }: TitleProps) {
         </div>
       </div>
 
-      <img src={me} alt="" width={300} />
+      <img src={me} alt="" className="lg:w-80 md:w-64 sm:w-64 w-56" />
     </div>
   );
 }

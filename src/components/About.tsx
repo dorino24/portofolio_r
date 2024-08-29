@@ -18,7 +18,7 @@ export default function About({ onTitleHeightChange }: TitleProps) {
       <Line />
       <div className="flex justify-center flex-col text-center my-20">
         <h1 className="text-5xl">Hello</h1>
-        <p className="text-lg mt-10 mx-32 text-neutral-400">
+        <p className="text-lg mt-10 mx-14 lg:mx-32  text-neutral-400">
           Hello! My name is Ridho Priambodo. I'm a recent graduate in Electrical
           Engineering with a specialization in Information and Communication
           Technology. Throughout my academic journey, I was actively involved in

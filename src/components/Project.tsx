@@ -32,11 +32,11 @@ const Project = () => {
   if (!image) {
     return <div>No image data provided.</div>;
   }
-
+  console.log(image.youtube);
   return (
     <div className="container mx-auto bg-inherit">
-      <div className="flex flex-wrap bg-white my-16 rounded-xl h-full py-8">
-        <div className="w-1/2 flex items-center justify-center py-16 flex-col">
+      <div className="flex flex-col items-center lg:flex-row flex-wrap bg-white my-16 rounded-xl h-full py-8">
+        <div className="w-full lg:w-1/2 flex items-center justify-center py-16 flex-col">
           <div className="w-2/3">
             <img
               src={currentImage[currentIndex]}
@@ -63,7 +63,7 @@ const Project = () => {
             )}
           </div>
         </div>
-        <div className="w-1/2 pe-20 ">
+        <div className="w-full lg:w-1/2 pe-16 ps-16 lg:ps-0 lg:pe-20 ">
           <h1 className="text-4xl font-bold py-8">{image.title_img}</h1>
           <hr className="border-neutral-800 w-2/3" />
           <h4 className="text-xl font-semibold py-2 pt-6 ">Summary</h4>
@@ -72,9 +72,25 @@ const Project = () => {
           <p className="text-md">{image.responsibilities}</p>
           <h4 className="text-xl font-semibold py-2 pt-6">Key Technologies </h4>
           <p className="text-md">{image.language}</p>
+
+          {image.youtube && (
+            <div>
+              <h4 className="text-xl font-semibold py-2 pt-8">
+                Project Demonstration
+              </h4>
+              <iframe
+                className="w-56 h-32  sm:w-96 sm:h-52 mt-4"
+                src={"https://www.youtube.com/embed/"+image.youtube}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          )}
           <div className="flex justify-end pt-10 pe-2">
             <button onClick={() => navigate("/portofolio_r")}>
-              <img src={arrow} className="w-12 opacity-55 hover:opacity-100"  />
+              <img src={arrow} className="w-12 opacity-55 hover:opacity-100" />
             </button>
           </div>
         </div>
